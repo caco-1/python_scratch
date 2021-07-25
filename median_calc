@@ -1,0 +1,17 @@
+num1 = int(input('How many numbers do you want to enter? '))
+
+hold = []
+count = 0
+
+while count < num1:
+    num2 = int(input('Enter a number: '))
+    hold.append(num2)
+    count += 1
+
+hold.sort()
+first = hold[:len(hold)//2]
+second = hold[len(hold)//2:]
+
+last = (first[-1] + second[0]) / num1
+
+print('the median value = ', last)
