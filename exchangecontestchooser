@@ -1,0 +1,14 @@
+import random
+
+ranNumber = []
+ranNumber.extend(range(1,13))
+
+random.shuffle(ranNumber)
+
+with open('listcontest.txt') as f:
+    lines = f.readlines()
+    random.shuffle(lines)
+
+    for i in range(0, len(lines)):
+        if i == int(ranNumber[0]):
+            print(lines[i])
