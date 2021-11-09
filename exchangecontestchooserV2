@@ -1,0 +1,15 @@
+
+
+import random #imports 'random' module
+
+ranNumber = [] # creates empty list
+ranNumber.extend(range(1,13)) # fills list with integers from 1 to 12
+
+random.shuffle(ranNumber) # shuffles order of list
+
+lines = ['Lukman Hakim', 'Captainfalconer', 'wmzy(Petr)', 'Terry', 'cryptofy', 'Er_Ick', 'INAM', 'cryptoMJ', 'cabbage', 'Paul', 'Nix', '//sdinelli']
+# above is the contestant list
+
+for i in range(0, len(lines)): #loops over the contestant list's index (positional value) one iteration at a time
+    if i == int(ranNumber[0]): #conditional statement to compare equality between the current index position of the contestant list and index position 0 of the random number list
+        print(lines[i]) #prints the string which evaluated to true in the last statement: the winner
