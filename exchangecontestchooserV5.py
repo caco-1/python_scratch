@@ -10,7 +10,7 @@ def artTime(a): # Function that takes 1 parameter: the winning string: to conver
     a = text2art(a, font='4x4_offr', chr_ignore=True) # Converts the string to ASCII art.
     for x in a: # Iterates over the ASCII (a) string.
         print(colored(x,'red', 'on_grey', attrs=['bold','dark']), end='', flush = True) # Prints the fomatted ASCII (a) string with colours and attributes.
-        time.sleep(0.01) # Delays by 1 hundreth of a second before printing the next line.
+        time.sleep(0.04) # Delays by 1 hundreth of a second before printing the next line.
     print(stringX)
     return a # Returns the output of the above.
 
