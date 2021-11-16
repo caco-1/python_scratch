@@ -6,12 +6,11 @@ from termcolor import colored, cprint # Imports coloured 'text' module.
 
 
 def artTime(a): # Function that takes 1 parameter: the winning string: to convert to ASCII and delay the release of the next printed line.
-    print('And the winner is...\n\n')
+    
     a = text2art(a, font='4x4_offr', chr_ignore=True) # Converts the string to ASCII art.
     for x in a: # Iterates over the ASCII (a) string.
         print(colored(x,'red', 'on_grey', attrs=['bold','dark']), end='', flush = True) # Prints the fomatted ASCII (a) string with colours and attributes.
         time.sleep(0.04) # Delays by 1 hundreth of a second before printing the next line.
-    print(stringX)
     return a # Returns the output of the above.
 
 def split(s): # Function.
@@ -45,4 +44,4 @@ print('\nAnd the winner is...') # Output
 
 artTime('\n\n\n' +stringX) # Passes stringX to the artTime function.
 
-print('\n\n' + stringX + '\n') # Output
+print('\n\n'Congratulations + stringX + '\n') # Output
