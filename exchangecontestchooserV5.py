@@ -42,6 +42,6 @@ for character in liChar: # Iterates over the string lichar.
 
 print('\nAnd the winner is...') # Output
 
-artTime('\n\n\n' +stringX) # Passes stringX to the artTime function.
+artTime('\n\n' +stringX) # Passes stringX to the artTime function.
 
 print('Congratulations', stringX + '\n') # Output
