@@ -44,4 +44,4 @@ print('\nAnd the winner is...') # Output
 
 artTime('\n\n\n' +stringX) # Passes stringX to the artTime function.
 
-print('Congratulations ', stringX + '\n') # Output
+print('Congratulations', stringX + '\n') # Output
