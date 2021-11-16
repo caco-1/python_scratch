@@ -41,5 +41,8 @@ liChar = '\'[]' # String characters which are left over after the list to string
 for character in liChar: # Iterates over the string lichar.
     stringX = stringX.replace(character, '') # Searches over the stringx string to remove the lichar characters.
 
+print('\nAnd the winner is...') # Output
 
-artTime(stringX) # Passes stringX to the artTime function.
+artTime('\n\n\n' +stringX) # Passes stringX to the artTime function.
+
+print('\n\n' + stringX + '\n') # Output
